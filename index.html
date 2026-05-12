@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Давление и пульс - поддержка и конфиденциальность</title>
+  <meta name="description" content="Поддержка и политика конфиденциальности приложения Давление и пульс.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --surface: #ffffff;
+      --surface-soft: #f0f3ef;
+      --text: #17181b;
+      --muted: #626872;
+      --line: #e2e5df;
+      --accent: #2f8c67;
+      --accent-soft: #e8f5ef;
+      --warning: #c9792b;
+      --danger: #b94b4b;
+      --shadow: 0 20px 60px rgba(23, 24, 27, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .hero {
+      padding: 48px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--text);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      border: 1px solid var(--line);
+      background: var(--surface-soft);
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      margin-top: 22px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--surface);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .note {
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      color: #1f5f49;
+      font-weight: 650;
+    }
+
+    .warning {
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: #fff4e6;
+      color: #83511b;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 22px, 920px);
+        padding-top: 18px;
+      }
+
+      .hero {
+        padding: 28px 22px;
+        border-radius: 24px;
+      }
+
+      .lead {
+        font-size: 17px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 22px;
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Support & Privacy</p>
+      <h1>Давление и пульс</h1>
+      <p class="lead">
+        Простое приложение для домашнего дневника давления, пульса, заметок и PDF-отчётов для врача.
+      </p>
+      <div class="actions">
+        <a class="button" href="mailto:void4function@gmail.com">Написать в поддержку</a>
+        <a class="button secondary" href="#privacy">Политика конфиденциальности</a>
+      </div>
+    </header>
+
+    <div class="grid" aria-label="Основные возможности">
+      <div class="metric">
+        <strong>Дневник</strong>
+        <span>Давление, пульс, время, самочувствие и заметки.</span>
+      </div>
+      <div class="metric">
+        <strong>Статистика</strong>
+        <span>Средние значения, динамика и понятные периоды.</span>
+      </div>
+      <div class="metric">
+        <strong>PDF для врача</strong>
+        <span>Краткий отчёт с графиками и важными замерами.</span>
+      </div>
+    </div>
+
+    <section id="support">
+      <h2>Поддержка</h2>
+      <p>
+        Если у вас есть вопрос, проблема с приложением или предложение, напишите нам:
+        <a href="mailto:void4function@gmail.com">void4function@gmail.com</a>.
+      </p>
+      <p class="muted">
+        Обычно мы отвечаем в течение нескольких рабочих дней.
+      </p>
+    </section>
+
+    <section>
+      <h2>Медицинская оговорка</h2>
+      <div class="warning">
+        Приложение носит информационный характер и не заменяет консультацию врача.
+        Оно не ставит диагнозы, не назначает лечение и не принимает медицинские решения.
+      </div>
+      <p style="margin-top: 14px;">
+        Если значения давления или пульса вызывают тревогу, обсудите их с врачом.
+        При резком ухудшении самочувствия обращайтесь за медицинской помощью.
+      </p>
+    </section>
+
+    <section id="privacy">
+      <h2>Политика конфиденциальности</h2>
+      <p class="muted">Последнее обновление: 12 мая 2026</p>
+
+      <h3>Какие данные хранит приложение</h3>
+      <p>
+        Приложение может хранить введённые вами замеры давления, пульса, дату и время измерения,
+        заметки, самочувствие, контекст измерения, настройки приложения и данные, необходимые для работы подписки.
+      </p>
+
+      <h3>Где хранятся данные</h3>
+      <p>
+        Основные данные дневника хранятся на вашем устройстве. Если вы используете системные функции Apple,
+        часть данных может обрабатываться средствами iOS согласно настройкам вашего устройства и политике Apple.
+      </p>
+
+      <h3>Apple Health</h3>
+      <p>
+        Если вы разрешите доступ к Apple Health, приложение может читать и сохранять связанные с давлением данные,
+        чтобы дневник был полнее. Доступ к Apple Health можно изменить или отключить в настройках iOS.
+      </p>
+
+      <h3>PDF-отчёты</h3>
+      <p>
+        PDF-отчёт создаётся по вашему действию. Вы сами решаете, кому отправлять или показывать отчёт.
+        Отчёт может содержать давление, пульс, даты, заметки и контекст измерений.
+      </p>
+
+      <h3>Передача данных третьим лицам</h3>
+      <p>
+        Мы не продаём ваши медицинские данные. Данные могут передаваться только если это необходимо для работы
+        выбранных вами функций, например системного шаринга PDF, Apple Health или обработки подписки через App Store.
+      </p>
+
+      <h3>Подписки и покупки</h3>
+      <p>
+        Подписки и покупки обрабатываются через App Store. Мы не получаем данные вашей банковской карты.
+        Управлять подпиской можно в настройках Apple ID.
+      </p>
+
+      <h3>Данные диагностики</h3>
+      <p>
+        Apple может предоставлять разработчикам агрегированную информацию о сбоях и производительности,
+        если это разрешено в настройках вашего устройства.
+      </p>
+
+      <h3>Удаление данных</h3>
+      <p>
+        Вы можете удалять отдельные замеры в приложении. Удаление приложения с устройства удаляет локальные данные,
+        если они не были сохранены в других системных сервисах, например Apple Health.
+      </p>
+
+      <h3>Контакты</h3>
+      <p>
+        По вопросам конфиденциальности и поддержки пишите:
+        <a href="mailto:void4function@gmail.com">void4function@gmail.com</a>.
+      </p>
+
+      <div class="note">
+        Email поддержки: void4function@gmail.com.
+      </div>
+    </section>
+
+    <footer class="footer">
+      Давление и пульс. Информационный дневник здоровья.
+    </footer>
+  </main>
+</body>
+</html>
